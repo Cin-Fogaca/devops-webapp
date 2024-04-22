@@ -1,0 +1,19 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Adicione os passos necessários para construir, testar e implantar sua aplicação aqui
+
+      - name: Print "hello, world!"
+        run: echo "hello, world!"
